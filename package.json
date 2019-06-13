@@ -1,0 +1,48 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -w server server/server.js --exec babel-node",
+    "build": "next build && babel server -d .next/server",
+    "start": "NODE_ENV=production node server/server.js",
+    "heroku-postbuild": "next build && babel server -d .next/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^3.9.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "immutability-helper": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.3",
+    "next": "^8.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0",
+    "webpackbar": "^2.6.1",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "eslint": "^5.1.0",
+    "nodemon": "^1.18.1"
+  }
+}

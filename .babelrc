@@ -1,0 +1,17 @@
+{
+    "plugins": [
+      ["inline-import", { "extensions": [".css"] }],
+      ["import", { "libraryName": "antd" }]
+    ],
+    "presets": [
+      [
+        "next/babel",
+        {
+          "preset-env": {
+            "modules": "commonjs"
+          }
+        }
+      ]
+    ],
+    "ignore": []
+}
